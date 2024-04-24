@@ -14,7 +14,7 @@ public class MainCommand extends Command {
     private final SubCommandManager subCommandManager;
 
     public MainCommand(@NotNull MoreFoWorld plugin) {
-        super("morefoworld", "MoreFoWorld command", "/morefoworld", Arrays.asList("worlds", "mfw"));
+        super("foliaworldloader", "FoliaWorldLoader command", "/foliaworldloader", Arrays.asList("worlds", "fwl", "foliaworlds"));
         this.subCommandManager = new SubCommandManager();
         subCommandManager.registerSubcommand(new CurrentCommand());
         subCommandManager.registerSubcommand(new TeleportCommand(plugin));
